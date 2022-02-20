@@ -1,0 +1,8 @@
+<div class="hi"></div>
+<form [formGroup]="form">
+    <input placeholder="Enter your Image" formControlName="Image">
+    <input placeholder="Enter your Message" formControlName="Message">
+    <input placeholder="Enter your Number" formControlName="Number">
+</form>
+
+<div class="custbutton" (click)="add()">Submit</div>

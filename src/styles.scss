@@ -1,0 +1,260 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%;}
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~aos/dist/aos.css";
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+span.sr-only{
+    visibility: hidden;
+    display: none;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root {
+    --col1d: rgb(53,64,27);
+    --col1m: rgb(97, 117, 49);
+    --col1l: rgb(147, 175, 80);
+    --col2d:	rgb(107,29,13);
+    --col2m: rgb(145, 40, 20);
+    --col2l: rgb(212, 64, 35);
+    --col2vl: rgb(247, 126, 102);
+    --col3d: rgb(142,158,55);
+    --col3m: rgb(193, 212, 84);
+    --col3l: rgb(221, 240, 113);
+    --col3vl: rgb(245, 255, 191);
+    // --col4: #45a5ff;
+    --col4: #00c6df;
+    --col4d:rgb(45, 88, 72);
+    --col4l: rgb(66, 126, 103);
+    --col4vl: rgb(123, 228, 188);
+    --col5: rgb(212, 212, 212);
+    --appbg: #FFF4F4;
+    --dpink:#E46F80;
+    --lpink:#E9CAD2;
+    --grey:#D2D2D0;
+ }
+
+.custbutton1 {
+    background-color: var(--col4);
+    position: relative;
+    border-radius: 2px;
+    padding: 2% 5%;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    //box-shadow: 5px 2px 2px silver;
+    border: solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+ }
+
+ @font-face {
+    font-family: country;
+    src: url(assets/fonts/CountrysideTwo-r9WO.ttf) format("opentype");
+  }
+
+  
+ @font-face {
+    font-family: handwriting;
+    src: url(assets/fonts/GrestalScriptDemoRegular-dBYX.ttf) format("opentype");
+  }
+  *{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    max-width: 3px;
+    background: #f1f1f1; 
+    /* background-image: url("../src/media/Scroll.png");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column; */
+  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 10px;
+    opacity: 80%;
+      background-color:var(--lpink);;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    /* position: absolute; */
+    box-shadow: 7px 7px 7px 7px var(--grey);
+    border: #0e1a2e;
+    /* overflow: visible; */
+    /* background-image: linear-gradient(#4286f46e,#EA43356e, #FBBC046e,#34A8536e); */
+  }
+
+  .custbutton {
+    width: fit-content;
+    height: 40px;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+  
+.btn-4 {
+    background-color: var(--dpink);
+  background-image: linear-gradient(315deg, var(--dpink) 0%, var(--lpink) 74%);
+    line-height: 42px;
+    padding: 2vh;
+    border: none;
+  }
+  .btn-4:hover{
+    // background-color: #89d8d3;
+    background-image: linear-gradient(315deg, var(--lpink) 0%, var(--dpink) 74%);
+  }
+  .btn-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-4:before,
+  .btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.9),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+  }
+  .btn-4:before {
+    height: 0%;
+    width: .1px;
+  }
+  .btn-4:after {
+    width: 0%;
+    height: .1px;
+  }
+  .btn-4:hover:before {
+    height: 100%;
+  }
+  .btn-4:hover:after {
+    width: 100%;
+  }
+  .btn-4 span:before,
+  .btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.9),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+  }
+  .btn-4 span:before {
+    width: .1px;
+    height: 0%;
+  }
+  .btn-4 span:after {
+    width: 0%;
+    height: .1px;
+  }
+  .btn-4 span:hover:before {
+    height: 100%;
+  }
+  .btn-4 span:hover:after {
+    width: 100%;
+  }
+  .tooltip-example {
+    text-align: center;
+    padding: 0 50px;
+  }
+  .tooltip-example [tooltip] {
+    display: inline-block;
+    margin: 50px 20px;
+    width: 180px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .ng-tooltip {
+    position: absolute;
+    max-width: 150px;
+    font-size: 14px;
+    text-align: center;
+    color: #f8f8f2;
+    padding: 3px 8px;
+    background: #282a36;
+    border-radius: 4px;
+    z-index: 1000;
+    opacity: 0;
+  }
+  .ng-tooltip:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+  }
+  .ng-tooltip-top:after {
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-color: black transparent transparent transparent;
+  }
+  .ng-tooltip-bottom:after {
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-color: transparent transparent black transparent;
+  }
+  .ng-tooltip-left:after {
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-color: transparent transparent transparent black;
+  }
+  .ng-tooltip-right:after {
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-color: transparent black transparent transparent;
+  }
+  .ng-tooltip-show {
+    opacity: 1;
+  }

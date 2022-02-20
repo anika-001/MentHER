@@ -1,0 +1,58 @@
+<div class="main">
+    <div class="images">
+
+        <div class="imgtop"></div>
+
+        <div class="whatwedopage">
+            <div class="whatwedoimg">
+                <div class="title2">
+                    What do we do?
+                </div>
+                <div class="infowhatwedo">
+                    Provide a worldwide platform that connects professional women mentors and mentees for career development.
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class = "randomimg"></div> -->
+    </div>
+    <div class="maincont">
+        <div class="toptrans">
+            <div class="content">
+                <div class="name">
+                    MentHer
+                </div>
+                <div class="tagline">
+                    Provide a worldwide platform that connects professional women mentors and mentees for career development.
+                </div>
+                <!-- <div class = "custbutton">
+                    Shop now
+                </div> -->
+            </div>
+        </div>
+        <div class="infosec">
+            <div class="name2">
+                Why?
+            </div>
+            <div class="info">
+                There were several things that inspired the idea of MentHer. One of them was LinkedIn as we admire how professionals connect through the network. However, we felt that it lacked the importance of being able to connect mentors with mentees. Additionally, we believe that providing a platform that connects women mentors and mentees would be a step in the right direction to further improve gender equality across the world.</div>
+        </div>
+        <div class="whatwedo">
+
+        </div>
+        <div class="spaces">
+            <div class="name2">
+                Explore our spaces
+            </div>
+
+            <div class="spacespace">
+                <div class = "space" *ngFor = "let x of spaces; let i = index" routerLink={{x.link}}>
+                    <div class = "spaceimg"><img src = {{x.image}} style="height: 100%; width: 100%;"></div>
+                    <div class = "namespace">{{x.name}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
